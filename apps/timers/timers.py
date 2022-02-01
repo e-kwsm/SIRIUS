@@ -5,6 +5,7 @@ import json
 import sys
 import os
 import copy
+from __future__ import print_function
 
 matplotlib.pyplot.figure(1, figsize=(10,14))
 
@@ -59,7 +60,7 @@ for itg in range(len(timer_groups)):
         timer_values.append(t)
         total_time += t
         
-    print "total time for timer group ", itg, " ", total_time
+    print("total time for timer group ", itg, " ", total_time)
     
     plot = matplotlib.pyplot.subplot("41%i"%(itg+1))
     box = plot.get_position()

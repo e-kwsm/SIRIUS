@@ -1,4 +1,4 @@
-#!/usr/bin/env -S python -u -m mpi4py
+#!/usr/bin/env -S python3 -u -m mpi4py
 from sirius.nlcg import run, validate_config
 import argparse
 from sirius import save_state

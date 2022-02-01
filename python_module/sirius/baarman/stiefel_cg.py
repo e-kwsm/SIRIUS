@@ -52,8 +52,7 @@ def num_electrons(n, T, mu, num_spins):
     """
 
     """
-    return sum(map(lambda x: fermi_function(x, T, mu, num_spins),
-                   np.arange(n)))
+    return sum([fermi_function(x, T, mu, num_spins) for x in np.arange(n)])
 
 
 def trim(X, fn, tol=1e-12):

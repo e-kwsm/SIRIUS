@@ -115,7 +115,7 @@ def einsum(expr, *operands):
         out = type(operands[0])(dtype=operands[0].dtype, ctype=np.array)
         for key in operands[0]._data.keys():
             out[key] = np.einsum(expr,
-                                 *list(map(lambda x: x[key], operands)))
+                                 *list([x[key] for x in operands]))
         return out
 
 

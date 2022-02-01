@@ -1,6 +1,7 @@
 import sys
 import math
 import json
+from __future__ import print_function
 
 au2angs = 1.889725989
 
@@ -35,7 +36,7 @@ def main():
 
     s.store()
 
-    print "created structure with uuid='{}' and PK={}".format(s.uuid,s.pk)
+    print("created structure with uuid='{}' and PK={}".format(s.uuid,s.pk))
 
     grp, created = Group.get_or_create(name='imported_structures')
     grp.add_nodes([s])
