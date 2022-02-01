@@ -83,7 +83,7 @@ void Non_local_functor<T>::add_k_point_contribution(K_point<real_type<T>>& kpoin
                     int iat = unit_cell.atom(ia).type_id();
 
                     if (unit_cell.atom(ia).type().spin_orbit_coupling()) {
-                        TERMINATE("stress and forces with SO coupling are not upported");
+                        TERMINATE("stress and forces with SO coupling are not supported");
                     }
 
                     /* helper lambda to calculate for sum loop over bands for different beta_phi and dij combinations*/

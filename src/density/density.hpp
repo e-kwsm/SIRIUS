@@ -136,7 +136,7 @@ inline std::pair<double, double> get_rho_up_dn(int num_mag_dims__, double rho__,
 
     At this point it is straightforward to compute the density and magnetization in the interstitial
     (see Density::add_k_point_contribution_rg()). The muffin-tin part of the density and magnetization is obtained
-    in a slighlty more complicated way. Recall the expansion of spinor wave-functions inside the muffin-tin
+    in a slightly more complicated way. Recall the expansion of spinor wave-functions inside the muffin-tin
     \f$ \alpha \f$:
     \f[
     \Psi_{j{\bf k}}^{\sigma}({\bf r}) = \sum_{\xi}^{N_{\xi}^{\alpha}} {S_{\xi}^{\sigma j {\bf k},\alpha}}
@@ -317,7 +317,7 @@ class Density : public Field4D
     {
         PROFILE("sirius::Density::generate_pseudo_core_charge_density");
 
-        /* get lenghts of all G shells */
+        /* get lengths of all G shells */
         auto q = ctx_.gvec().shells_len();
         /* get form-factors for all G shells */
         auto ff = ctx_.ps_core_ri().values(q, ctx_.comm());

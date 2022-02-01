@@ -127,7 +127,7 @@ class Periodic_function : public Smooth_periodic_function<T>
         }
     }
 
-    /// Syncronize global muffin-tin array.
+    /// Synchronize global muffin-tin array.
     void sync_mt()
     {
         PROFILE("sirius::Periodic_function::sync_mt");

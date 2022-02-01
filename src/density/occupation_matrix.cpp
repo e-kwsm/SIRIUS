@@ -30,7 +30,7 @@ namespace sirius {
 Occupation_matrix::Occupation_matrix(Simulation_context& ctx__)
     : Hubbard_matrix(ctx__)
 {
-    /* a pair of "total number, offests" for the Hubbard orbitals idexing */
+    /* a pair of "total number, offsets" for the Hubbard orbitals indexing */
     int nhwf = ctx_.unit_cell().num_hubbard_wf().first;
 
     /* find all possible translations */
@@ -80,7 +80,7 @@ void Occupation_matrix::add_k_point_contribution(K_point<T>& kp__)
         occ_mtrx.allocate(ctx_.mem_pool(mem));
     }
 
-    /* a pair of "total number, offests" for the Hubbard orbitals idexing */
+    /* a pair of "total number, offsets" for the Hubbard orbitals indexing */
     auto r = ctx_.unit_cell().num_hubbard_wf();
 
     // TODO collnear and non-collinear cases have a lot of similar code; there should be a way to combine it
@@ -238,7 +238,7 @@ Occupation_matrix::symmetrize()
         RTE_THROW("non-collinear nonlocal occupancy symmetrization is not implemented");
     }
 
-    /* a pair of "total number, offests" for the Hubbard orbitals idexing */
+    /* a pair of "total number, offsets" for the Hubbard orbitals indexing */
     auto r = ctx_.unit_cell().num_hubbard_wf();
 
     for (int i = 0; i < ctx_.cfg().hubbard().nonlocal().size(); i++) {

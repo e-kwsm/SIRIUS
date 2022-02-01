@@ -185,7 +185,7 @@ void Local_operator<T>::prepare_k(Gvec_partition const& gkvec_p__)
 
     int ngv_fft = gkvec_p__.gvec_count_fft();
 
-    /* cache kinteic energy of plane-waves */
+    /* cache kinetic energy of plane-waves */
     if (static_cast<int>(pw_ekin_.size()) < ngv_fft) {
         pw_ekin_ = mdarray<T, 1>(ngv_fft, ctx_.mem_pool(memory_t::host), "Local_operator::pw_ekin");
     }
@@ -832,7 +832,7 @@ void Local_operator<T>::apply_b(spfft_transform_type<T>& spfftk__, int N__, int 
 {
     PROFILE("sirius::Local_operator::apply_b");
 
-    // TODO: bphi[1] is not used here (it will compied from bphi[0] with a negative sign later;
+    // TODO: bphi[1] is not used here (it will copied from bphi[0] with a negative sign later;
     //       so it's remapping here is useless
 
     /* components of H|psi> to which H is applied */

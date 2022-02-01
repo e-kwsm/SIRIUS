@@ -78,10 +78,10 @@ extern "C" void add_pw_ekin_gpu_double(int                   num_gvec__,
 namespace sirius {
 
 /// Representation of the local operator.
-/** The following functionality is implementated:
+/** The following functionality is implemented:
  *    - application of the local part of Hamiltonian (kinetic + potential) to the wave-functions in the PP-PW case
  *    - application of the interstitial part of H and O in the case of FP-LAPW
- *    - application of the interstitial part of effective magnetic field to the first-variational functios
+ *    - application of the interstitial part of effective magnetic field to the first-variational functions
  *    - remapping of potential and unit-step functions from fine to coarse mesh of G-vectors
  */
 template <typename T>
@@ -185,7 +185,7 @@ class Local_operator
      *  \param [in]  N        Starting index of wave-functions.
      *  \param [in]  n        Number of wave-functions to which H and O are applied.
      *  \param [in]  phi      Input wave-functions.
-     *  \param [out] bphi     Output vector of magentic field components, applied to the wave-functions.
+     *  \param [out] bphi     Output vector of magnetic field components, applied to the wave-functions.
      */
     void apply_b(spfft_transform_type<T>& spfftk__, int N__, int n__, sddk::Wave_functions<T>& phi__,
                  std::vector<sddk::Wave_functions<T>>& bphi__); // TODO: align argument order with apply_h()

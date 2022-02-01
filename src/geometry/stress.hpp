@@ -403,7 +403,7 @@ class Stress
      *   \sum_{\alpha} \sum_{\xi \xi'} n_{\xi \xi'}^{\alpha} \int V^{eff}({\bf r}) Q_{\xi \xi'}^{\alpha}({\bf r})
      *   d{\bf r}
      * \f]
-     * The derivatives of beta-projectors (hidden in the desnity matrix expression) are taken into account
+     * The derivatives of beta-projectors (hidden in the density matrix expression) are taken into account
      * in \link sirius::Stress::calc_stress_nonloc \endlink. Here we need to compute the remaining contribution
      * from the
      * \f$ Q_{\xi \xi'}({\bf r}) \f$ itself. We are interested in the integral:

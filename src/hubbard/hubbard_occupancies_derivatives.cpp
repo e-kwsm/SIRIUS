@@ -279,7 +279,7 @@ Hubbard::compute_occupancies_derivatives(K_point<double>& kp, Q_operator<double>
             // compute (d S/ d R_K) |phi> and add to dphi. It is Eq.18 of Ref PRB 102, 235159 (2020)
             apply_dS(kp, q_op, bp_grad, atom_id, dir, phi, dphi);
 
-            // dphi comtains S |dphi^atom> + dS^atom |phi>
+            // dphi contains S |dphi^atom> + dS^atom |phi>
             if (ctx_.cfg().hubbard().orthogonalize()) {
 
                 // we first compute the dO/dr
@@ -605,7 +605,7 @@ Hubbard::wavefunctions_strain_deriv(K_point<double>& kp__, Wave_functions<double
     for (int igkloc = 0; igkloc < kp__.num_gkvec_loc(); igkloc++) {
         /* global index of G+k vector */
         const int igk = kp__.idxgk(igkloc);
-        /* Cartesian coordinats of G-vector */
+        /* Cartesian coordinates of G-vector */
         auto gvc = kp__.gkvec().gkvec_cart<index_domain_t::local>(igkloc);
         /* vs = {r, theta, phi} */
         auto gvs = SHT::spherical_coordinates(gvc);

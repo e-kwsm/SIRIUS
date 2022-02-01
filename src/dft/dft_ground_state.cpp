@@ -251,7 +251,7 @@ json DFT_ground_state::find(double density_tol, double energy_tol, double itsol_
 #if defined(USE_FP32)
         /* if the final precision is not equal to the current precision */
         if (ctx_.cfg().parameters().precision_gs() == "fp64" && ctx_.cfg().parameters().precision_wf() == "fp32") {
-            /* if we reached the mimimum tolerance for fp32 */
+            /* if we reached the minimum tolerance for fp32 */
             if ((ctx_.cfg().settings().fp32_to_fp64_rms() == 0 && itsol_tol <= ctx_.cfg().settings().itsol_tol_min()) ||
                 (rms < ctx_.cfg().settings().fp32_to_fp64_rms())) {
                 std::cout << "switching to FP64" << std::endl;

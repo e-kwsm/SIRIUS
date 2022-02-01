@@ -368,7 +368,7 @@ class U_operator
     U_operator(Simulation_context const& ctx__, Hubbard_matrix const& um1__, std::array<double, 3> vk__)
         : ctx_(ctx__)
     {
-        /* a pair of "total number, offests" for the Hubbard orbitals idexing */
+        /* a pair of "total number, offsets" for the Hubbard orbitals indexing */
         auto r = ctx_.unit_cell().num_hubbard_wf();
         this->nhwf_ = r.first;
         this->offset_ = r.second;
@@ -376,7 +376,7 @@ class U_operator
         um_.zero();
 
         /* copy only local blocks */
-        // TODO: implement Fourier-transfomation of the T-dependent occupancy matrix
+        // TODO: implement Fourier-transformation of the T-dependent occupancy matrix
         // to get the generic k-dependent matrix
         for (int ia = 0; ia < ctx_.unit_cell().num_atoms(); ia++) {
             if (ctx_.unit_cell().atom(ia).type().hubbard_correction()) {
