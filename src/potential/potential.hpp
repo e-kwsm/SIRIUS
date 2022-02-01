@@ -274,7 +274,7 @@ class Potential : public Field4D
     {
         PROFILE("sirius::Potential::generate_local_potential");
 
-        /* get lenghts of all G shells */
+        /* get lengths of all G shells */
         auto q = ctx_.gvec().shells_len();
         /* get form-factors for all G shells */
         auto ff = ctx_.vloc_ri().values(q, ctx_.comm());
@@ -609,7 +609,7 @@ class Potential : public Field4D
      *  \f}
      *  In magnetic case the "up" and "dn" density and potential decomposition is used. Using the fact that the
      *  effective magnetic field is parallel to magnetization at each point in space, we can write the coupling
-     *  of density and magnetization with XC potential and XC magentic field as:
+     *  of density and magnetization with XC potential and XC magnetic field as:
      *  \f[
      *      V_{xc}({\bf r}) \rho({\bf r}) + {\bf B}_{xc}({\bf r}){\bf m}({\bf r}) =
      *        V_{xc}({\bf r}) \rho({\bf r}) + {\rm B}_{xc}({\bf r}) {\rm m}({\bf r}) =

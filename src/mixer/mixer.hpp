@@ -282,7 +282,7 @@ class Mixer
 
     /// Construct a mixer. Functions have to initialized individually.
     /** \param [in]  max_history   Maximum number of steps stored, which contribute to the mixing.
-     *  \param [in]  commm         Communicator used for exchaning mixing contributions.
+     *  \param [in]  commm         Communicator used for exchanging mixing contributions.
      */
     Mixer(std::size_t max_history)
         : step_(0)
@@ -388,7 +388,7 @@ class Mixer
         this->axpy(-1.0, output_history_[idx_hist(step_)], residual_history_[idx_hist(step_)]);
     }
 
-    // update rmse histroy for current step. Residuals must have been updated before.
+    // update rmse history for current step. Residuals must have been updated before.
     void update_rms()
     {
         const auto idx = idx_hist(step_);

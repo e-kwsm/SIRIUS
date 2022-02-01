@@ -325,7 +325,7 @@ K_point<T>::orthogonalize_hubbard_orbitals(Wave_functions<T>& phi__, Wave_functi
 
         auto sr = spin_range(ctx_.num_mag_dims() == 3 ? 2 : istep);
 
-        /* compute inner product between full spinors or between indpendent components */
+        /* compute inner product between full spinors or between independent components */
         inner<std::complex<T>>(ctx_.spla_context(), sr, phi__, 0, nwfu, sphi__, 0, nwfu, S, 0, 0);
 
         // SPLA should return on CPU as well
@@ -588,7 +588,7 @@ void K_point<T>::get_fv_eigen_vectors(mdarray<std::complex<T>, 2> &fv_evec__) co
 //            int igk = igkglob(igkloc);
 //            double_complex z1 = spinor_wave_functions_(ctx_.mt_basis_size() + igk, ispn, jloc) * fourpi_omega;
 //
-//            // TODO: possilbe optimization with zgemm
+//            // TODO: possible optimization with zgemm
 //            for (int ia = 0; ia < ctx_.num_atoms(); ia++)
 //            {
 //                int iat = ctx_.atom_type_index_by_id(ctx_.atom(ia)->type_id());
@@ -695,7 +695,7 @@ void K_point<T>::get_fv_eigen_vectors(mdarray<std::complex<T>, 2> &fv_evec__) co
 //==     //    //    int igk = igkglob(igkloc);
 //==     //    //    double_complex z1 = spinor_wave_functions_(ctx_.mt_basis_size() + igk, ispn, jloc) * fourpi_omega;
 //==
-//==     //    //    // TODO: possilbe optimization with zgemm
+//==     //    //    // TODO: possible optimization with zgemm
 //==     //    //    for (int ia = 0; ia < ctx_.num_atoms(); ia++)
 //==     //    //    {
 //==     //    //        int iat = ctx_.atom_type_index_by_id(ctx_.atom(ia)->type_id());

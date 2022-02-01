@@ -196,7 +196,7 @@ void Potential::generate_D_operator_matrix()
                 for (int xi2 = 0; xi2 < nbf; xi2++) {
                     for (int xi1 = 0; xi1 <= xi2; xi1++) {
                         int idx12 = xi2 * (xi2 + 1) / 2 + xi1;
-                        /* D-matix is symmetric */
+                        /* D-matrix is symmetric */
                         atom.d_mtrx(xi1, xi2, iv) = atom.d_mtrx(xi2, xi1, iv) = d_tmp(idx12, i) * unit_cell_.omega();
                     }
                 }

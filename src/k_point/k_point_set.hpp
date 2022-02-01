@@ -60,7 +60,7 @@ class K_point_set
     /// Band gap found by find_band_occupancies().
     double band_gap_{0};
 
-    /// Copy constuctor is not allowed.
+    /// Copy constructor is not allowed.
     K_point_set(K_point_set& src) = delete;
 
     /// Create regular grid of k-points.

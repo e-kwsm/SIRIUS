@@ -80,7 +80,7 @@ class Matching_coefficients // TODO: compute on GPU
     /** \param [in] ngk           Number of G+k vectors.
      *  \param [in] phase_factors Phase factors of G+k vectors.
      *  \param [in] iat           Index of atom type.
-     *  \param [in] l             Orbital quantum nuber.
+     *  \param [in] l             Orbital quantum number.
      *  \param [in] lm            Composite l,m index.
      *  \param [in] nu            Order of radial function \f$ u_{\ell \nu}(r) \f$ for which coefficients are generated.
      *  \param [in] A             Inverse matrix of radial derivatives.

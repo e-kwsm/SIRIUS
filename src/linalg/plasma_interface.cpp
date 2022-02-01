@@ -41,7 +41,7 @@ extern "C" void plasma_zheevd_wrapper(int32_t matrix_size, void* a, int32_t lda,
     int info = PLASMA_zheevd(PlasmaVec, PlasmaUpper, matrix_size, (PLASMA_Complex64_t*)a, lda, eval, descT, (PLASMA_Complex64_t*)z, ldz);
     if (info != 0)
     {
-        std::printf("erorr calling PLASMA_zheevd\n");
+        std::printf("error calling PLASMA_zheevd\n");
         exit(0);
     }
 

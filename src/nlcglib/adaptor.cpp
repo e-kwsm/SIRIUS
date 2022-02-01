@@ -74,7 +74,7 @@ Energy::Energy(K_point_set& kset, Density& density, Potential& potential)
     , density(density)
     , potential(potential)
 {
-    // intialize hphi and sphi and allocate (device) memory
+    // initialize hphi and sphi and allocate (device) memory
     int nk    = kset.spl_num_kpoints().local_size();
     auto& ctx = kset.ctx();
     // auto& mpd = ctx.mem_pool(ctx.preferred_memory_t());

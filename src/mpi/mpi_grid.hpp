@@ -37,7 +37,7 @@ namespace sddk {
  *  grid with the first dimension of the size 4 and the second dimensoion of the size 5. The \em actual number of
  *  grid dimensions is two, however we may also consider the grid as being a D-dimensional (D >= 2) with implicit
  *  dimension sizes equal to one, e.g. 4x5 := 4x5x1x1x1... The communication happens along single or multiple
- *  \em directions along the grid dimensions. We specify directions wth bits, eg. directions=00000101 reads as
+ *  \em directions along the grid dimensions. We specify directions with bits, eg. directions=00000101 reads as
  *  "communication along 1-st and 3-rd dimensions".
  *  \image html mpi_grid_comm.png "Communication along dimension d0 (between ranks of d0)."
  *  In the provided example the corresponding communicator is MPI_grid::communicator(1 << d0), where d0 is the integer
@@ -115,7 +115,7 @@ class MPI_grid
             communicators_[i] = base_grid_communicator_.cart_sub(flg.data());
         }
 
-        /* expicitly set the "self" communicator */
+        /* explicitly set the "self" communicator */
         communicators_[0] = Communicator(MPI_COMM_SELF);
     }
 

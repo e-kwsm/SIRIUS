@@ -19,7 +19,7 @@
 
 /** \file mixer_functions.cpp
  *
- *  \brief Contains implemenations of functions required for mixing.
+ *  \brief Contains implementations of functions required for mixing.
  */
 
 #include <cassert>
