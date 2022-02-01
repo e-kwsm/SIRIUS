@@ -112,7 +112,7 @@ void deserialize(serializer& s__, Gvec& gv__);
 Gvec send_recv(Communicator const& comm__, Gvec const& gv_src__, int source__, int dest__);
 
 /// A set of G-vectors for FFTs and G+k basis functions.
-/** Current implemntation supports up to 2^12 (4096) z-dimension of the FFT grid and 2^20 (1048576) number of
+/** Current implementation supports up to 2^12 (4096) z-dimension of the FFT grid and 2^20 (1048576) number of
  *  z-columns. The order of z-sticks and G-vectors is not fixed and depends on the number of MPI ranks used
  *  for the parallelization. */
 class Gvec
@@ -199,7 +199,7 @@ class Gvec
     */
     mdarray<int, 1> gvec_base_mapping_;
 
-    /// Cartiesian coordinaes for a local set of G-vectors.
+    /// Cartesian coordinaes for a local set of G-vectors.
     mdarray<double, 2> gvec_cart_;
 
     /// Cartesian coordinaes for a local set of G+k-vectors.
@@ -342,7 +342,7 @@ class Gvec
     }
 
     /// Set the new reciprocal lattice vectors.
-    /** For the varibale-cell relaxation runs we need an option to preserve the number of G- and G+k vectors.
+    /** For the variable-cell relaxation runs we need an option to preserve the number of G- and G+k vectors.
      *  Here we can set the new lattice vectors and update the relevant members of the Gvec class. */
     inline auto const& lattice_vectors(matrix3d<double> lattice_vectors__)
     {
@@ -717,7 +717,7 @@ class Gvec_partition
 
 /// Helper class to manage G-vector shells and redistribute G-vectors for symmetrization.
 /** G-vectors are remapped from default distribution which balances both the local number
-    of z-columns and G-vectors to the distributio of G-vector shells in which each MPI rank stores
+    of z-columns and G-vectors to the distribution of G-vector shells in which each MPI rank stores
     local set of complete G-vector shells such that the "rotated" G-vector remains on the same MPI rank.
  */
 class Gvec_shells

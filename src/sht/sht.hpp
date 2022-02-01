@@ -422,7 +422,7 @@ class SHT // TODO: better name
         return std::conj(ylm_dot_rlm(l, m2, m1));
     }
 
-    /// Gaunt coefficent of three complex spherical harmonics.
+    /// Gaunt coefficient of three complex spherical harmonics.
     /**
      *  \f[
      *    \langle Y_{\ell_1 m_1} | Y_{\ell_2 m_2} | Y_{\ell_3 m_3} \rangle
@@ -442,7 +442,7 @@ class SHT // TODO: better name
                gsl_sf_coupling_3j(2 * l1, 2 * l2, 2 * l3, -2 * m1, 2 * m2, 2 * m3);
     }
 
-    /// Gaunt coefficent of three real spherical harmonics.
+    /// Gaunt coefficient of three real spherical harmonics.
     /**
      *  \f[
      *    \langle R_{\ell_1 m_1} | R_{\ell_2 m_2} | R_{\ell_3 m_3} \rangle
@@ -471,7 +471,7 @@ class SHT // TODO: better name
         return d;
     }
 
-    /// Gaunt coefficent of two real spherical harmonics with a complex one.
+    /// Gaunt coefficient of two real spherical harmonics with a complex one.
     /**
      *  \f[
      *    \langle R_{\ell_1 m_1} | Y_{\ell_2 m_2} | R_{\ell_3 m_3} \rangle
@@ -497,7 +497,7 @@ class SHT // TODO: better name
         return d;
     }
 
-    /// Gaunt coefficent of two complex and one real spherical harmonics.
+    /// Gaunt coefficient of two complex and one real spherical harmonics.
     /**
      *  \f[
      *    \langle Y_{\ell_1 m_1} | R_{\ell_2 m_2} | Y_{\ell_3 m_3} \rangle

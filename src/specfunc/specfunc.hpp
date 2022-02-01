@@ -39,7 +39,7 @@ namespace sf {
 
 inline double hermiteh(int n, double x)
 {
-    // phycisists Hermite polynomials,
+    // physicists Hermite polynomials,
     // https://www.gnu.org/software/gsl/doc/html/specfunc.html#c.gsl_sf_hermite
     return gsl_sf_hermite(n, x);
 }

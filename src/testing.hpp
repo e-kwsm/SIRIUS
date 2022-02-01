@@ -55,7 +55,7 @@ inline int call_test(std::string label__, F&& f__)
     if (err) {
         std::cout << label__ << " : Failed" << std::endl;
         if (msg.size()) {
-            std::cout << "exception occured:" << std::endl;
+            std::cout << "exception occurred:" << std::endl;
             std::cout << msg << std::endl;
         }
     } else {

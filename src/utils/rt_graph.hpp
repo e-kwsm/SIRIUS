@@ -50,7 +50,7 @@ enum class Stat {
   Median,            // Median time
   QuartileHigh,      // Third quartile time
   QuartileLow,       // First quartile time
-  Min,               // Mininum time
+  Min,               // Minimum time
   Max,               // Maximum time
   Percentage,        // Percentage of accumulated time with respect to the top-level node in graph
   ParentPercentage,  // Percentage of accumulated time with respect to the parent node in graph

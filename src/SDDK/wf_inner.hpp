@@ -48,7 +48,7 @@ namespace sddk {
  *  \param [in]  n        Number of "ket" wave-functions.
  *  \param [out] result   Resulting inner product matrix \f$ S \f$.
  *  \param [in]  irow0    First row (in the global matrix) of the inner product sub-matrix.
- *  \param [in]  jcol0    First column (in the global matix) of the inner product sub-matrix.
+ *  \param [in]  jcol0    First column (in the global matrix) of the inner product sub-matrix.
  */
 template <typename T>
 void

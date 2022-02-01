@@ -38,7 +38,7 @@
 namespace sirius {
 
 /// Defines the properties of atom type.
-/** Atoms wth the same properties are grouped by type. */
+/** Atoms with the same properties are grouped by type. */
 class Atom_type
 {
   private:
@@ -197,7 +197,7 @@ class Atom_type
 
     /// Occupations of PAW wave-functions.
     /** Length of vector is the same as the number of beta projectors. This is used for the initial guess of
-     *  oribtal occupancies. */
+     *  orbital occupancies. */
     std::vector<double> paw_wf_occ_;
 
     /// Core electron contribution to all electron charge density in PAW method.

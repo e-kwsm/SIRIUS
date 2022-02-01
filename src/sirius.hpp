@@ -275,7 +275,7 @@ inline void finalize(bool call_mpi_fin__ = true, bool reset_device__ = true, boo
 Below is the list of standard names for some of the loop variables:
 
 l - index of orbital quantum number \n
-m - index of azimutal quantum nuber \n
+m - index of azimutal quantum number \n
 lm - combined index of (l,m) quantum numbers \n
 ia - index of atom \n
 ic - index of atom class \n
@@ -516,7 +516,7 @@ in the source root folder for the definitions and use helper script 'clang_forma
 Problem: all 'standard' naming conventions are not satisfactory. For example, we have a class
 which does a DFT ground state. Following the common naming conventions it could be named like this:
 DFTGroundState, DftGroundState, dft_ground_state. Last two are bad, because DFT (and not Dft or dft)
-is a well recognized abbreviation. First one is band because capital G adds to DFT and we automaticaly
+is a well recognized abbreviation. First one is band because capital G adds to DFT and we automatically
 read DFTG round state.
 
 Solution: we can propose the following: DFTgroundState or DFT_ground_state. The first variant still

@@ -43,7 +43,7 @@ namespace sirius {
     where \f$ f({\bf r}) \f$ has to be understood as an unsymmetrized scalar or vector function.
     In the case of a scalar function \f$ \hat {\bf S} = 1 \f$. In the case of vector function
     \f$ \hat {\bf S} \f$ is rotation matrix acting on the Cartesian components of the function.
-    \f$ \hat {\bf P} = \{{\bf R}|{\bf t}\} \f$ is a spacial part of the full magentic symmetry operatoin acting
+    \f$ \hat {\bf P} = \{{\bf R}|{\bf t}\} \f$ is a spacial part of the full magnetic symmetry operatoin acting
     on the real-space coordinates.
 
     For the function expanded in plane-waves we have:
@@ -60,7 +60,7 @@ namespace sirius {
     where \f$ {\bf G}' = {\bf G}{\bf R}^{-1} = {\bf R}^{-T}{\bf G} \f$. The last expression establishes the link
     between unsymmetrized plane-wave coefficient at <b>G</b>-vector and symmetrized coefficient at <b>G</b>'. We will
     rewrite the expression using inverse relation \f$ {\bf G} = {\bf R}^{T}{\bf G'} \f$ and summing over <b>G</b>'
-    (which is just a permutaion of <b>G</b>):
+    (which is just a permutation of <b>G</b>):
     \f[
        f_{\mathrm{sym}}({\bf r}) = 
         \sum_{\bf G'} e^{i{\bf G}'{\bf r}} \frac{1}{N_{\mathrm{sym}}} \sum_{\hat{\bf S}\hat{\bf P}}

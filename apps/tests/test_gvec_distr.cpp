@@ -169,9 +169,9 @@ void test_gvec(double cutoff__, bool reduce__)
         auto idx = gvec.index_by_gvec(G);
         if (idx != ig) {
             std::stringstream s;
-            s << "wrong reverce index" << std::endl
+            s << "wrong reverse index" << std::endl
               << "direct index: " << ig << std::endl
-              << "reverce index: " << idx;
+              << "reverse index: " << idx;
             TERMINATE(s);
         }
     }

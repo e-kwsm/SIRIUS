@@ -32,7 +32,7 @@ namespace sirius {
 namespace experimental {
 
 /// Angular momentum quantum number.
-/** This class handles orbital or total angluar momentum quantum number. */
+/** This class handles orbital or total angular momentum quantum number. */
 class angular_momentum
 {
   private:

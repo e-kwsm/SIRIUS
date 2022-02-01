@@ -91,7 +91,7 @@ do i = 1, n
   do j = 1, l
     call sirius_option_get_info(trim(adjustl(section)), j, key, len(key), ctype, l, enum_size,&
         &desc, len(desc), usage, len(usage))
-    write(*,'(" key : ", I2," [",A,"], type : ",I2,", lenght : ",I2)')j,trim(adjustl(key)),ctype,l
+    write(*,'(" key : ", I2," [",A,"], type : ",I2,", length : ",I2)')j,trim(adjustl(key)),ctype,l
     write(*,*)trim(adjustl(desc))
     write(*,*)trim(adjustl(usage))
     if (ctype == SIRIUS_INTEGER_TYPE) then

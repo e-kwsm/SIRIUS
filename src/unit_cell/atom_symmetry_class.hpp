@@ -31,7 +31,7 @@
 namespace sirius {
 
 /// Data and methods specific to the symmetry class of the atom.
-/** Atoms transforming into each other under symmetry opeartions belong to the same symmetry class. They have the
+/** Atoms transforming into each other under symmetry operations belong to the same symmetry class. They have the
  *  same spherical part of the on-site potential and, as a consequence, the same radial functions.
  */
 class Atom_symmetry_class

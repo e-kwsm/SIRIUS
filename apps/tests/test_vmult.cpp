@@ -190,7 +190,7 @@ int main(int argn, char** argv)
     args.register_key("--cutoff=", "{double} wave-functions cutoff");
     args.register_key("--num_bands=", "{int} number of bands");
     args.register_key("--use_gpu=", "{int} 0: CPU only, 1: hybrid CPU+GPU");
-    args.register_key("--gpu_workload=", "{double} worload of GPU");
+    args.register_key("--gpu_workload=", "{double} workload of GPU");
 
     args.parse_args(argn, argv);
     if (args.exist("help"))

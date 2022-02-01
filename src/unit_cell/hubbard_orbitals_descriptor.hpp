@@ -29,7 +29,7 @@
 
 namespace sirius {
 
-/// Structure containing all informations about a specific hubbard orbital (including the radial function).
+/// Structure containing all information about a specific hubbard orbital (including the radial function).
 class hubbard_orbital_descriptor
 {
   private:

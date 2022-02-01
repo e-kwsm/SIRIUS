@@ -29,7 +29,7 @@ include(CheckCXXCompilerFlag)
 set(HIP_HIPCC_FLAGS "" CACHE STRING "Semicolon delimited flags for HIPCC")
 set(HIP_HCC_FLAGS "" CACHE STRING "Semicolon delimited flags for HCC")
 set(HIP_CLANG_FLAGS "" CACHE STRING "Semicolon delimited flags for CLANG")
-set(HIP_NVCC_FLAGS "" CACHE STRING "Semicolon delimted flags for NVCC")
+set(HIP_NVCC_FLAGS "" CACHE STRING "Semicolon delimited flags for NVCC")
 mark_as_advanced(HIP_HIPCC_FLAGS HIP_HCC_FLAGS HIP_CLANG_FLAGS HIP_NVCC_FLAGS)
 
 set(_hip_configuration_types ${CMAKE_CONFIGURATION_TYPES} ${CMAKE_BUILD_TYPE} Debug MinSizeRel Release RelWithDebInfo)

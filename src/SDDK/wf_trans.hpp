@@ -70,7 +70,7 @@ transform_mt(::spla::Context& spla_ctx__, int ispn__, real_type<F> alpha__, std:
                 PROFILE("sddk::wf_trans|mt");
                 /* input wave-functions may be scalar (this is the case of transformation of first-variational states
                    into spinor wave-functions or transforamtion of scalar auxiliary wave-functions into spin-dependent
-                   wave-fucntions; in this case we set spin index of input wave-function to 0 */
+                   wave-functions; in this case we set spin index of input wave-function to 0 */
                 int in_s = (wf_in__[iv]->num_sc() == 1) ? 0 : s;
 
                 if (local_has_mt) {
@@ -118,7 +118,7 @@ transform(::spla::Context& spla_ctx__, int ispn__, real_type<F> alpha__,
             PROFILE("sddk::wf_trans|pw");
             /* input wave-functions may be scalar (this is the case of transformation of first-variational states
                into spinor wave-functions or transforamtion of scalar auxiliary wave-functions into spin-dependent
-               wave-fucntions; in this case we set spin index of input wave-function to 0 */
+               wave-functions; in this case we set spin index of input wave-function to 0 */
             int in_s = (wf_in__[iv]->num_sc() == 1) ? 0 : s;
 
             spla::pgemm_sbs(size_factor * wf_in__[iv]->pw_coeffs(in_s).num_rows_loc(), n__, m__, alpha__,

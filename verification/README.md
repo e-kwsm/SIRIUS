@@ -33,28 +33,28 @@ salloc -N4 -C gpu --time=60:00 -A csstaff
 
 ## test05: NiO
 - ultrasoft pseudopotential
-- collinear magentic, AFM configuration
+- collinear magnetic, AFM configuration
 - LDA (PZ)
 
 ## test06: Fe
 - ultrasoft pseudopotential
-- collinear magentic, FM configuration
+- collinear magnetic, FM configuration
 - LDA (PZ)
 
 ## test07: Ni
 - ultrasoft pseudopotential
-- collinear magentic, FM configuration
+- collinear magnetic, FM configuration
 - GGA (PBE for solids)
 
 ## test08: Si
 - ultrasoft pseudopotential
-- non-magentic
+- non-magnetic
 - LDA (PZ)
 - 1x1x1 k-mesh without Gamma-point treatment
 
 ## test09: Ni
 - ultrasoft pseudopotential
-- non-collinear magentic
+- non-collinear magnetic
 - LDA (PZ)
 
 ## test10: Au

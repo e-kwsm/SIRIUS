@@ -753,7 +753,7 @@ class Radial_solver
     /// Integrates the radial equation for a given energy and finds the m-th energy derivative of the radial solution.
     /** \param [in] rel Type of relativity
      *  \param [in] dme Order of energy derivative.
-     *  \param [in] l Oribtal quantum number.
+     *  \param [in] l Orbital quantum number.
      *  \param [in] enu Integration energy.
      *  \param [out] p \f$ p(r) = ru(r) \f$ radial function.
      *  \param [out] rdudr \f$ ru'(r) \f$.

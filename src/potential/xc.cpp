@@ -71,7 +71,7 @@ void Potential::xc_rg_nonmagnetic(Density const& density__)
     if (rhomin < 0.0 && ctx_.comm().rank() == 0) {
         std::stringstream s;
         s << "Interstitial charge density has negative values" << std::endl
-          << "most negatve value : " << rhomin;
+          << "most negative value : " << rhomin;
         WARNING(s);
     }
 
@@ -96,7 +96,7 @@ void Potential::xc_rg_nonmagnetic(Density const& density__)
     Smooth_periodic_function<double> div_vsigma_grad_rho;
 
     if (is_gga) {
-        /* use fft_transfrom of the base class (Smooth_periodic_function) */
+        /* use fft_transform of the base class (Smooth_periodic_function) */
         rho.fft_transform(-1);
 
         /* generate pw coeffs of the gradient */
@@ -140,7 +140,7 @@ void Potential::xc_rg_nonmagnetic(Density const& density__)
         PROFILE_START("sirius::Potential::xc_rg_nonmagnetic|libxc");
         if (ixc.is_vdw()) {
 #if defined(SIRIUS_USE_VDWXC)
-            /* all ranks should make a call because VdW uses FFT internaly */
+            /* all ranks should make a call because VdW uses FFT internally */
             if (num_points) {
                 /* Van der Walls correction */
                 ixc.get_vdw(&rho.f_rg(0), &grad_rho_grad_rho.f_rg(0), vxc.at(memory_t::host), &vsigma.f_rg(0),
@@ -339,7 +339,7 @@ void Potential::xc_rg_magnetic(Density const& density__)
         PROFILE_START("sirius::Potential::xc_rg_magnetic|libxc");
         if (ixc.is_vdw()) {
 #if defined(SIRIUS_USE_VDWXC)
-            /* all ranks should make a call because VdW uses FFT internaly */
+            /* all ranks should make a call because VdW uses FFT internally */
             if (num_points) {
                 ixc.get_vdw(&rho_up.f_rg(0), &rho_dn.f_rg(0), &grad_rho_up_grad_rho_up.f_rg(0),
                              &grad_rho_dn_grad_rho_dn.f_rg(0), vxc_up.at(memory_t::host), vxc_dn.at(memory_t::host),

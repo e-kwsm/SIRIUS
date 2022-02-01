@@ -118,7 +118,7 @@ This module will set the following variables in your project
 ``Python2_NumPy_FOUND``
   System has the NumPy.
 ``Python2_NumPy_INCLUDE_DIRS``
-  The NumPy include directries.
+  The NumPy include directories.
 ``Python2_NumPy_VERSION``
   The NumPy version.
 

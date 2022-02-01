@@ -259,7 +259,7 @@ class Crystal_symmetry
     double metric_tensor_error() const;
 
     /// Get error in rotation matrix of the symmetry operation.
-    /** Comparte rotation matrix in Cartesian coordinates with its inverse transpose. They should match.
+    /** Compare rotation matrix in Cartesian coordinates with its inverse transpose. They should match.
      *
      *  The error is the maximum value of \f$ |R_{ij} - R_{ij}^{-T}| \f$, where \f$ R_{ij} \f$ is the rotation
      *  matrix and \f$  R_{ij}^{-T} \f$ inverse transpose of the rotation matrix. */

@@ -48,7 +48,7 @@ for e in timers_to_show:
 max_time = 0
 for t in timers_list:
     if 'sequence' not in timers[t]:
-        raise RuntimeError("time sequence is not avalibale for timer %s"%(t))
+        raise RuntimeError("time sequence is not available for timer %s"%(t))
     if len(timers[t]['sequence']) % 2 != 0:
         raise RuntimeError("number of values is not even for timer %s"%(t))
 

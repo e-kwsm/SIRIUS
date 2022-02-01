@@ -63,7 +63,7 @@ find_sym_atom(int num_atoms__, sddk::mdarray<double, 2> const& positions__, matr
            and the reduction of coordinates is required */
         for (int k = 0; k < num_atoms__; k++) {
             vector3d<double> pos1(positions__(0, k), positions__(1, k), positions__(2, k));
-            /* find the distance between atom k and trasformed atoms ia */
+            /* find the distance between atom k and transformed atoms ia */
             double dist = distance(v.first, reduce_coordinates(pos1).first);
             if (dist < tolerance__) {
                 ja = k;
@@ -293,7 +293,7 @@ Crystal_symmetry::Crystal_symmetry(matrix3d<double> const& lattice_vectors__, in
                     n++;
                 }
             }
-            /* if all atoms transform under spin rotaion, add it to a list */
+            /* if all atoms transform under spin rotation, add it to a list */
             if (n == num_atoms_) {
                 magnetic_group_symmetry_descriptor mag_op;
                 mag_op.spg_op            = space_group_symmetry(isym);
