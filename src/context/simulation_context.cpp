@@ -196,7 +196,7 @@ Simulation_context::sum_fg_fl_yg(int lmax__, double_complex const* fpw__, mdarra
     }
 
     int lmmax = utils::lmmax(lmax__);
-    /* resuling matrix */
+    /* resulting matrix */
     mdarray<double_complex, 2> flm(lmmax, unit_cell().num_atoms());
 
     matrix<double_complex> phase_factors;

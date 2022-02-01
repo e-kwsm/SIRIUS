@@ -62,7 +62,7 @@ double unit_step_function_form_factors(double R__, double g__);
 /// Simulation context is a set of parameters and objects describing a single simulation.
 /** The order of initialization of the simulation context is the following: first, the default parameter
     values are set in the constructor, then (optionally) import() method is called and the parameters are
-    overwritten with the those from the input file, and finally, the user sets the values with setter metods.
+    overwritten with the those from the input file, and finally, the user sets the values with setter methods.
     Then the unit cell can be populated and the context can be initialized.
  */
 class Simulation_context : public Simulation_parameters
@@ -143,7 +143,7 @@ class Simulation_context : public Simulation_parameters
     /// Phase factors for atom types.
     sddk::mdarray<double_complex, 2> phase_factors_t_;
 
-    /// Lattice coordinats of G-vectors in a GPU-friendly ordering.
+    /// Lattice coordinates of G-vectors in a GPU-friendly ordering.
     sddk::mdarray<int, 2> gvec_coord_;
 
     /// Theta and phi angles of G-vectors in GPU-friendly ordering.

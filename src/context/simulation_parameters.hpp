@@ -61,7 +61,7 @@ class Config : public config_t
 class Simulation_parameters
 {
   private:
-    /// All user-provided paramters are stored here.
+    /// All user-provided parameters are stored here.
     Config cfg_;
 
   public:
@@ -306,7 +306,7 @@ class Simulation_parameters
         }
     }
 
-    /// Number of spinor wave-functions labeled by a sinlge band index.
+    /// Number of spinor wave-functions labeled by a single band index.
     /** In magnetic collinear case the wave-functions have two spin components, but they describe different
      *  states (pure spin-up, pure spin-dn), thus the number of spinors packed in a single band index is 2.
      *  In non-collinear case we have full two-component spinors for each band index. */

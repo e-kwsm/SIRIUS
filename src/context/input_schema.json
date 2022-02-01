@@ -121,7 +121,7 @@
                     "minItems" : 3,
                     "maxItems" : 3,
                     "default" : [0, 0, 0],
-                    "title" : "Initial dimenstions for the fine-grain FFT grid"
+                    "title" : "Initial dimensions for the fine-grain FFT grid"
                 },
                 "radial_grid" : {
                     "type" : "string",
@@ -132,7 +132,7 @@
                     "type" : "integer",
                     "default" : 0,
                     "title" : "Coverage of sphere in case of spherical harmonics transformation",
-                    "description" : "0 is Lebedev-Laikov coverage, 1 is unifrom coverage"
+                    "description" : "0 is Lebedev-Laikov coverage, 1 is uniform coverage"
                 },
                 "fp32_to_fp64_rms" : {
                     "type" : "number",
@@ -536,7 +536,7 @@
                 "auto_rmt" : {
                     "type" : "integer",
                     "default" : 1,
-                    "title" : "A choice of scaleing muffin-tin radii automatically."
+                    "title" : "A choice of scaling muffin-tin radii automatically."
                 },
                 "ngridk" : {
                     "type" : "array",

@@ -1191,7 +1191,7 @@ end subroutine sirius_free_object_handler
 !> @param [in] handler Handler of the DFT ground state object.
 !> @param [in] label Label of the function.
 !> @param [in] f_mt Pointer to the muffin-tin part of the function.
-!> @param [in] f_rg Pointer to the regualr-grid part of the function.
+!> @param [in] f_rg Pointer to the regular-grid part of the function.
 !> @param [out] error_code Error code
 subroutine sirius_set_periodic_function_ptr(handler,label,f_mt,f_rg,error_code)
 implicit none
@@ -2004,7 +2004,7 @@ deallocate(label_c_type)
 end subroutine sirius_set_atom_type_radial_grid
 
 !
-!> @brief Set radial grid of the free atom (up to effectice infinity).
+!> @brief Set radial grid of the free atom (up to effective infinity).
 !> @param [in] handler Simulation context handler.
 !> @param [in] label Atom type label.
 !> @param [in] num_radial_points Number of radial grid points.
@@ -4544,7 +4544,7 @@ end subroutine sirius_option_get_section_name
 
 !
 !> @brief Return the number of options in a given section.
-!> @param [in] section Name of the seciton.
+!> @param [in] section Name of the section.
 !> @param [out] length Number of options contained in the section.
 !> @param [out] error_code Error code.
 subroutine sirius_option_get_section_length(section,length,error_code)
@@ -4590,7 +4590,7 @@ end subroutine sirius_option_get_section_length
 !> @param [out] key_name Name of the option.
 !> @param [in] key_name_len Maximum length for the string (on the caller side). No allocation is done.
 !> @param [out] type Type of the option (real, integer, boolean, string, or array of the same types).
-!> @param [out] length Length of the default value (1 for the scalar types, otherwise the lenght of the array).
+!> @param [out] length Length of the default value (1 for the scalar types, otherwise the length of the array).
 !> @param [out] enum_size Number of elements in the enum type, zero otherwise.
 !> @param [out] title Short description of the option (can be empty).
 !> @param [in] title_len Maximum length for the short description.
@@ -5334,7 +5334,7 @@ end subroutine sirius_get_kpoint_properties
 !
 !> @brief Set callback function to compute various radial integrals.
 !> @param [in] handler Simulation context handler.
-!> @param [in] label Lable of the callback function.
+!> @param [in] label Label of the callback function.
 !> @param [in] fptr Pointer to callback function.
 !> @param [out] error_code Error code.
 subroutine sirius_set_callback_function(handler,label,fptr,error_code)
